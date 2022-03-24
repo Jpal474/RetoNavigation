@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.retonavigation.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_insideHome"
+            app:destination="@id/insideHome" />
+    </fragment>
+    <fragment
+        android:id="@+id/insideHome"
+        android:name="com.example.retonavigation.insideHome"
+        android:label="fragment_inside_home"
+        tools:layout="@layout/fragment_inside_home" >
+        <argument
+            android:name="Nombre"
+            app:argType="string"
+            android:defaultValue='" "' />
+        <argument
+            android:name="ApellidoP"
+            app:argType="string"
+            android:defaultValue='" "' />
+        <argument
+            android:name="ApellidoM"
+            app:argType="string"
+            android:defaultValue='" "' />
+        <argument
+            android:name="NombreU"
+            app:argType="string"
+            android:defaultValue='" "' />
+        <argument
+            android:name="Correo"
+            app:argType="string"
+            android:defaultValue='" "' />
+        <argument
+            android:name="NumeroTel"
+            app:argType="string"
+            android:defaultValue='" "' />
+        <argument
+            android:name="Contraseña"
+            app:argType="string"
+            android:defaultValue='" "' />
+    </fragment>
+</navigation>
