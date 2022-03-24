@@ -48,4 +48,14 @@
             app:argType="string"
             android:defaultValue='" "' />
     </fragment>
+    <fragment
+        android:id="@+id/profileFragment2"
+        android:name="com.example.retonavigation.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/settingsFragment2"
+        android:name="com.example.retonavigation.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" />
 </navigation>
